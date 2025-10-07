@@ -1,6 +1,6 @@
-// src/app/page.tsx - VERSÃO ATUAL CORRETA
 import Button from '@/components/ui/button';
 import Input from '@/components/ui/input';
+import Textarea from '@/components/ui/textarea';
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
           </p>
         </div>
 
-        {/* FORMULÁRIO TESTE */}
+        {/* FORMULÁRIO COMPLETO - TESTE TODOS COMPONENTES */}
         <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6">
           <h2 className="text-xl font-semibold mb-4">Teste de Componentes</h2>
           
@@ -34,6 +34,13 @@ export default function Home() {
               <Input type="email" placeholder="seu@email.com" />
             </div>
 
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Descrição da aula
+              </label>
+              <Textarea placeholder="Descreva o tema da sua aula..." />
+            </div>
+
             <div className="flex gap-2 pt-2">
               <Button>Enviar</Button>
               <Button style={{ backgroundColor: '#6b7280' }}>Cancelar</Button>
@@ -42,7 +49,7 @@ export default function Home() {
         </div>
 
         <div className="max-w-2xl mx-auto mt-8 text-center text-sm text-gray-500">
-          <p>✅ Input criado com sucesso! Próximo: Textarea</p>
+          <p>✅ Textarea criado com sucesso! Próximo: Select</p>
         </div>
       </div>
     </div>
