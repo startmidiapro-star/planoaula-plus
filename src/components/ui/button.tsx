@@ -11,18 +11,18 @@ export default function Home() {
           Crie planos de aula alinhados à BNCC em minutos, não horas.
         </p>
         
-        {/* TESTE DO BOTÃO - IMPORTANTE */}
+        {/* TESTE DO BOTÃO */}
         <div className="flex gap-4 justify-center mb-8">
-          <Button>Botão Primário</Button>
-          <Button style={{ backgroundColor: '#10b981' }}>
+          <Button>Botão Teste</Button>
+          <Button className="bg-green-600 hover:bg-green-700">
             Botão Verde
           </Button>
         </div>
 
         <div className="bg-white rounded-lg shadow-lg p-8 max-w-2xl mx-auto">
-          <p className="text-lg mb-4">✅ <strong>Primeiro Componente Criado!</strong></p>
+          <p className="text-lg mb-4">🚀 <strong>Componentes em Desenvolvimento</strong></p>
           <p className="text-gray-600">
-            O componente Button está funcionando! Próximo passo: Input e Formulário.
+            Botão criado com sucesso! Próximo: Formulário completo.
           </p>
         </div>
       </div>
