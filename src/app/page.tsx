@@ -1,3 +1,4 @@
+// src/app/page.tsx - VERSÃO ATUAL CORRETA
 import Button from '@/components/ui/button';
 import Input from '@/components/ui/input';
 
@@ -14,7 +15,7 @@ export default function Home() {
           </p>
         </div>
 
-        {/* TESTE DOS NOVOS COMPONENTES */}
+        {/* FORMULÁRIO TESTE */}
         <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6">
           <h2 className="text-xl font-semibold mb-4">Teste de Componentes</h2>
           
