@@ -1,29 +1,47 @@
-import Button from '@/components/ui/button';  // ✅ SEM { }
+import Button from '@/components/ui/button';
+import Input from '@/components/ui/input';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-      <div className="container mx-auto px-4 py-16 text-center">
-        <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 mb-6">
-          PlanoAula+
-        </h1>
-        <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-          Crie planos de aula alinhados à BNCC em minutos, não horas.
-        </p>
-        
-        {/* TESTE DO BOTÃO - IMPORTANTE */}
-        <div className="flex gap-4 justify-center mb-8">
-          <Button>Botão Primário</Button>
-          <Button style={{ backgroundColor: '#10b981' }}>
-            Botão Verde
-          </Button>
+      <div className="container mx-auto px-4 py-16">
+        <div className="max-w-2xl mx-auto text-center">
+          <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 mb-6">
+            PlanoAula+
+          </h1>
+          <p className="text-xl text-gray-600 mb-8">
+            Crie planos de aula alinhados à BNCC em minutos.
+          </p>
         </div>
 
-        <div className="bg-white rounded-lg shadow-lg p-8 max-w-2xl mx-auto">
-          <p className="text-lg mb-4">✅ <strong>Primeiro Componente Criado!</strong></p>
-          <p className="text-gray-600">
-            O componente Button está funcionando! Próximo passo: Input e Formulário.
-          </p>
+        {/* TESTE DOS NOVOS COMPONENTES */}
+        <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6">
+          <h2 className="text-xl font-semibold mb-4">Teste de Componentes</h2>
+          
+          <div className="space-y-4">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Nome completo
+              </label>
+              <Input placeholder="Digite seu nome" />
+            </div>
+            
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Email
+              </label>
+              <Input type="email" placeholder="seu@email.com" />
+            </div>
+
+            <div className="flex gap-2 pt-2">
+              <Button>Enviar</Button>
+              <Button style={{ backgroundColor: '#6b7280' }}>Cancelar</Button>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-2xl mx-auto mt-8 text-center text-sm text-gray-500">
+          <p>✅ Input criado com sucesso! Próximo: Textarea</p>
         </div>
       </div>
     </div>
